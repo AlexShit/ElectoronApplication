@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Police" content="script-src 'self'">
-    <title>demo_application</title>
-    <link rel="stylesheet" href="index.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Police" content="script-src 'self'">
+	<title>demo_application</title>
+	<link rel="stylesheet" href="index.css">
   </head>
   <body>
-      <input type="text" class="first_task_input" placeholder="Input the matrix"/>
-      
-      <div class="app_wrapper">
-        <div class="first_triangle">
-            <h2>Coord for first triangle</h2>
-            <input id="first_input" type="text"/>
-            <canvas id="first_canvas"></canvas>
-        </div>
-        <div class="second_triangle">
-            <h2>Coord for second triangle</h2>
-            <input id="second_input" type="text"/>
-            <canvas id="second_canvas"></canvas>
-        </div>
-
-        <div class="info-field"></div>
-      </div>
-
-      <input type="text" class="third_task_input" placeholder="Input the value"/>
-      
-    <script src="bundle.js"></script>
+	  <div class="app">
+		<div class="menu">
+			<button class="matrix-button">First task</button>
+			<button class="triangle-button">Second Task</button>
+			<button class="integral-button">Thrid Task</button>
+		</div>
+		  
+		  <div class="modules">
+			<div class="matrix_field">
+			  <input type="text" class="first_task_input" placeholder="Input the matrix"/>
+			</div>
+		  
+			<div class="triangle_field">
+			  <div class="app_wrapper ">
+				<div class="first_triangle">
+					<h2>Coord for first triangle</h2>
+					<input id="first_input" type="text"/>
+					<canvas id="first_canvas"></canvas>
+				</div>
+				<div class="second_triangle">
+					<h2>Coord for second triangle</h2>
+					<input id="second_input" type="text"/>
+					<canvas id="second_canvas"></canvas>
+				</div>
+			  </div>  
+			</div>
+			
+			<div class="integral_field">
+			  <div class="info-field"></div>
+			  <input type="text" class="third_task_input" placeholder="Input the value"/>
+			</div>
+		  </div>
+	  </div>
+	<script src="bundle.js"></script>
   </body>
 </html>
