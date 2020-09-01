@@ -28,3 +28,4 @@ document.querySelector('.first_task_input').addEventListener('change', (e) => {
 });
 getSecondTask();
 getThirdTask();
+
